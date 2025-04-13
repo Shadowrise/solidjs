@@ -10,7 +10,7 @@ type WeatherForecast = {
   temperatureC: number; 
   summary: string;      
   temperatureF: number; 
-}; 
+};
 
 const fetchWeatherForecast = async () => {
   const response = await fetch(`${fetchUrl}/weatherForecast`);
