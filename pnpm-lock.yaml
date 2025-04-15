@@ -8,6 +8,15 @@ importers:
 
   .:
     dependencies:
+      '@suid/icons-material':
+        specifier: ^0.8.1
+        version: 0.8.1(solid-js@1.9.5)
+      '@suid/material':
+        specifier: ^0.18.0
+        version: 0.18.0(solid-js@1.9.5)
+      '@suid/vite-plugin':
+        specifier: ^0.3.1
+        version: 0.3.1(vite@6.0.0)
       solid-js:
         specifier: ^1.9.5
         version: 1.9.5
@@ -267,6 +276,9 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
+  '@popperjs/core@2.11.8':
+    resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
   '@rollup/rollup-android-arm-eabi@4.27.4':
     resolution: {integrity: sha512-2Y3JT6f5MrQkICUyRVCw4oa0sutfAsgaSsb0Lmmy1Wi2y7X5vT9Euqw4gOsCyy0YfKURBg35nhUKZS4mDcfULw==}
     cpu: [arm]
@@ -357,6 +369,49 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@suid/base@0.10.1':
+    resolution: {integrity: sha512-zP9Ujdd/9AbZnn/kDMC+mMdBrE8i7U4q9sCKwGw3bLx0FQ+utPxRV+9NQ8KLb0q0W5yleAHfjP0nycBAmL+DHQ==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/css@0.4.0':
+    resolution: {integrity: sha512-yzHAlf1CVi7n0SvUrMgs8Z49UiS9669+td1w1frekhRQuRbkXhHoyJkvovaDVJlWRmCPA8Q0f1OTr0uDCUg9mQ==}
+
+  '@suid/icons-material@0.8.1':
+    resolution: {integrity: sha512-QK1fcIuOKhHaOjT33yuKJSiUtRFVdcVBF9jzlY+xEc3Sw7qW+QpVs1iEPiIccQpZqfKDs48obvFC0alKk5aeCA==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/material@0.18.0':
+    resolution: {integrity: sha512-rx+CDdu0hy36do1TsfKYxn8VlsGB+mcehzND69i03cGSsfrspToyY6h1TNe9zxv0N9Bf2AbHlcgD/OoPrshOSQ==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/styled-engine@0.8.1':
+    resolution: {integrity: sha512-teVk82yH1P9Ce1fJcvlwDjjKxrpXL9ecmK5uBuxbNqUh2yHyrXIqw+mnPVzq6KDHQEu5ODDFFqH9KwWLl8DODQ==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/system@0.13.0':
+    resolution: {integrity: sha512-TILoCyQBPrnUl4kjOqHxvSLIjC2Z79vLtQ6T/osX0N72s+Q5NmHnKSvwc/tHLfPOCQKsKiEYNhkhikGCJKY/OA==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/types@0.7.1':
+    resolution: {integrity: sha512-VPRRMUcWS/IkkFoQa2FHJnhyUrrRs6Sic3rIcuz+EU8DfOMFqhDBZIQkNdeMB+5T8iHN0PtYlW8+uQzxTNJq0Q==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/utils@0.10.1':
+    resolution: {integrity: sha512-a8jHOL11nUibhGi1TsJKLGsNZ5NdHYwmNTAd3B/Z0TTaxX6Pg6CY3X8jqMWbrrXkHctwKokKEeDkVyrlQ7sP8g==}
+    peerDependencies:
+      solid-js: ^1.8.22
+
+  '@suid/vite-plugin@0.3.1':
+    resolution: {integrity: sha512-IXbYxRZr4ie4iCYlqBM2znLV/RKrIT2zpaYYI5k1DbJHXVW5nXniCoii7BlvM2SonOKlsQ6R8CNI2X3bjAmoVQ==}
+    peerDependencies:
+      vite: ^5.0.0
+
   '@types/babel__core@7.20.5':
     resolution: {integrity: sha512-qoQprZvz5wQFJwMDqeseRXWv3rqMvhgpbXFfVyWhbx9X47POIA6i/+dXefEmZKoAgOaTdaIgNSMqMIU61yRyzA==}
 
@@ -389,6 +444,10 @@ packages:
 
   caniuse-lite@1.0.30001684:
     resolution: {integrity: sha512-G1LRwLIQjBQoyq0ZJGqGIJUXzJ8irpbjHLpVRXDvBEScFJ9b17sgK6vlx0GAJFE21okD7zXl08rRRUfq6HdoEQ==}
+
+  clsx@2.1.1:
+    resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
+    engines: {node: '>=6'}
 
   convert-source-map@2.0.0:
     resolution: {integrity: sha512-Kvp459HrV2FEJ1CAsi1Ku+MY3kasH19TFykTz2xWmMeq6bk2NU3XXvfJ+Q61m0xktWwt+1HSYf3JZsTms3aRJg==}
@@ -793,6 +852,8 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
+  '@popperjs/core@2.11.8': {}
+
   '@rollup/rollup-android-arm-eabi@4.27.4':
     optional: true
 
@@ -847,6 +908,70 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.27.4':
     optional: true
 
+  '@suid/base@0.10.1(solid-js@1.9.5)':
+    dependencies:
+      '@popperjs/core': 2.11.8
+      '@suid/css': 0.4.0
+      '@suid/system': 0.13.0(solid-js@1.9.5)
+      '@suid/types': 0.7.1(solid-js@1.9.5)
+      '@suid/utils': 0.10.1(solid-js@1.9.5)
+      clsx: 2.1.1
+      solid-js: 1.9.5
+
+  '@suid/css@0.4.0': {}
+
+  '@suid/icons-material@0.8.1(solid-js@1.9.5)':
+    dependencies:
+      '@suid/material': 0.18.0(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@suid/material@0.18.0(solid-js@1.9.5)':
+    dependencies:
+      '@suid/base': 0.10.1(solid-js@1.9.5)
+      '@suid/css': 0.4.0
+      '@suid/system': 0.13.0(solid-js@1.9.5)
+      '@suid/types': 0.7.1(solid-js@1.9.5)
+      '@suid/utils': 0.10.1(solid-js@1.9.5)
+      clsx: 2.1.1
+      solid-js: 1.9.5
+
+  '@suid/styled-engine@0.8.1(solid-js@1.9.5)':
+    dependencies:
+      '@suid/css': 0.4.0
+      '@suid/utils': 0.10.1(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@suid/system@0.13.0(solid-js@1.9.5)':
+    dependencies:
+      '@suid/css': 0.4.0
+      '@suid/styled-engine': 0.8.1(solid-js@1.9.5)
+      '@suid/types': 0.7.1(solid-js@1.9.5)
+      '@suid/utils': 0.10.1(solid-js@1.9.5)
+      clsx: 2.1.1
+      csstype: 3.1.3
+      solid-js: 1.9.5
+
+  '@suid/types@0.7.1(solid-js@1.9.5)':
+    dependencies:
+      solid-js: 1.9.5
+
+  '@suid/utils@0.10.1(solid-js@1.9.5)':
+    dependencies:
+      '@suid/types': 0.7.1(solid-js@1.9.5)
+      solid-js: 1.9.5
+
+  '@suid/vite-plugin@0.3.1(vite@6.0.0)':
+    dependencies:
+      '@babel/generator': 7.26.2
+      '@babel/parser': 7.26.2
+      '@babel/traverse': 7.25.9
+      '@babel/types': 7.26.0
+      '@types/babel__generator': 7.6.8
+      '@types/babel__traverse': 7.20.6
+      vite: 6.0.0
+    transitivePeerDependencies:
+      - supports-color
+
   '@types/babel__core@7.20.5':
     dependencies:
       '@babel/parser': 7.26.2
@@ -893,6 +1018,8 @@ snapshots:
       update-browserslist-db: 1.1.1(browserslist@4.24.2)
 
   caniuse-lite@1.0.30001684: {}
+
+  clsx@2.1.1: {}
 
   convert-source-map@2.0.0: {}
 
