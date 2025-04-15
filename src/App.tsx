@@ -10,7 +10,14 @@ type WeatherForecast = {
   temperatureC: number; 
   summary: string;      
   temperatureF: number; 
-}; 
+};
+
+type User = {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+};
 
 const fetchWeatherForecast = async () => {
   const response = await fetch(`${fetchUrl}/weatherForecast`);
@@ -18,8 +25,14 @@ const fetchWeatherForecast = async () => {
   return result as WeatherForecast[];
 }
 
+const fetchUsers = async () => {
+  const response = await fetch(`${fetchUrl}/users`);
+  const result = await response.json();
+  return result as User[];
+};
+
 const App: Component = () => {
-  const [weatherForecast] = createResource(fetchWeatherForecast);
+  const [users] = createResource(fetchUsers);
   
   return (
     <div class={styles.App}>
@@ -28,13 +41,13 @@ const App: Component = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        {weatherForecast.loading && <p>Loading...</p>}
-        {weatherForecast.error && <p>Error: {weatherForecast.error.message}</p>}
+        {users.loading && <p>Loading...</p>}
+        {users.error && <p>Error: {users.error.message}</p>}
         <ul>
-          <For each={weatherForecast()}>
-            {(forecast) => (
-              <li style={{margin: 0, padding: 0}}>
-                <span>{forecast.date} {forecast.temperatureC}°C, {forecast.summary}</span>
+          <For each={users()}>
+            {(user) => (
+              <li>
+                <span>Name: {user.name}; Email: {user.email}</span>
               </li>
             )}
           </For>
