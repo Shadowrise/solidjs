@@ -1,8 +1,8 @@
 import {Button, Container, createTheme, CssBaseline, ThemeProvider} from "@suid/material";
-import LoadingOverlay, {useLoadingOverlayStore} from "./LoadingOverlay";
-import UsersTable from "./UsersTable";
-import HeaderBar from "./HeaderBar";
 import {createResource} from "solid-js";
+import UsersTable from "./UsersTable";
+import LoadingOverlay, {useLoadingOverlayStore} from "./LoadingOverlay";
+import HeaderBar from "./HeaderBar";
 
 type User = {
   id: string;
